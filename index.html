@@ -4,74 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mon portfolio</title>
-    <script langage="JavaScript" type="text/JavaScript">
-        function direjambo(); { alert("jambo"); }
-    </script>
+    <link rel="stylesheet" href="ndakima_bilingual_form.css">
+    <title>Ndakima Holding – Client Intake / Saisie client</title>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="partie-gauche">
-            <img src="WhatsApp Image 2025-04-14 à 07.52.45_9d170d87.jpg" alt="Photo de profil" />
-            <h2>MUTOMBO MUSAKA DIKONZO ENOCK</h2>
+        <h1>Ndakima Holding – Client Intake / Saisie client</h1>
+        <p>
+            <strong>EN:</strong> Please complete this form so we can assess your needs and get in touch quickly.<br>
+            <strong>FR:</strong> Veuillez remplir ce formulaire afin que nous puissions évaluer vos besoins et vous contacter rapidement.
+        </p>
+        <form action="#" method="post">
+            <label>Full Name / Nom complet</label>
+            <input type="text" name="full_name" required>
 
-            <h3>CONTACT</h3>
-            <p>📞 : <a href="tel:+243970991965">+243 970991965</a></p>
-            <p>📧 : <a href="mailto:enockenockdik@gmail.com">enockenockdik@gmail.com</a></p>
-            <p>JOLIE SITE/KINSERVE 31e POTEAU</p>
+            <label>Phone number or WhatsApp / Numéro WhatsApp</label>
+            <input type="text" name="phone" required>
 
-            <h3>FOLLOW ME ╰┈></h3>
-            <p>Whatsapp : <a href="https://wa.me/qr/P6NFFTVHVIY7N1">+243 970991965</a></p>
-            <p>Snapchat : <a href="https://www.snapchat.com/add/enockenockdik?share_id=uPckXf8Pd8s&locale=en-US">enockdikdik</a></p>
+            <label>Country / Pays</label>
+            <input type="text" name="country" required>
 
-            <h3>LANGUAGES</h3>
-            <p>English</p>
-            <p>French</p>
+            <label>Type of product needed / Type de produit recherché</label>
+            <select name="product_type" required>
+        <option value="">-- Select / Choisissez --</option>
+        <option value="clothes">Clothes / Vêtements</option>
+        <option value="shoes">Shoes / Chaussures</option>
+        <option value="accessories">Accessories / Accessoires</option>
+        <option value="tools">Tools & Equipment / Outils & équipements</option>
+        <option value="other">Other / Autre</option>
+      </select>
 
-            <h3>HOBBIES</h3>
-            <ul>
-                <li>Reading</li>
-                <li>Sports</li>
-            </ul>
-        </div>
+            <label>Estimated quantity per month / Quantité mensuelle estimée</label>
+            <input type="text" name="quantity" required placeholder="e.g. 100 kg / ex : 100 kg">
 
-        <div class="partie-droite">
-            <h3>🚹 ABOUT ME</h3>
-            <p>First-year Computer Science undergraduate passionate about software development and problem-solving. Eager to apply academic knowledge in a tech internship or part-time role to gain hands-on experience.</p>
+            <label>Do you need custom branding or packaging? / Avez-vous besoin d’un emballage personnalisé ?</label>
+            <select name="custom_packaging" required>
+        <option value="yes">Yes / Oui</option>
+        <option value="no">No / Non</option>
+      </select>
 
-            <h3>🎓 EDUCATION</h3>
-            <p><strong>Bachelor of Science in Computer Science</strong> (underway)</p>
-            <p>Nouveaux Horizons University, RD Congo</p>
-            <ul>
-                <li>Relevant coursework: Python Programming, Algorithms, Web Fundamentals (HTML/CSS).</li>
-                <li>Projects:
-                    <ul>
-                        <li>Built a Python-based quiz game with score tracking.</li>
-                        <li>Developed a personal portfolio website using HTML/CSS.</li>
-                    </ul>
-                </li>
-            </ul>
+            <label>When do you want to start? / Quand souhaitez-vous commencer ?</label>
+            <input type="date" name="start_date" required>
 
-            <h3>💼 EXPERIENCE</h3>
-            <p><strong>Academic Leadership & Achievements</strong></p>
-            <ul>
-                <li>Graduated top of my family with 71% distinction (equivalent to First-Class Honors).</li>
-                <li>Served as class president for 4 consecutive years (2019-2023), leading peer collaboration initiatives.</li>
-                <li>Currently elected Vice president of L1 Computer Science.</li>
-            </ul>
+            <label>Additional notes (optional) / Informations supplémentaires (facultatif)</label>
+            <textarea name="additional_info" rows="4"></textarea>
 
-            <h3>🛠️ TECHNICAL SKILLS</h3>
-            <ul>
-                <li>Languages: Python (Beginner), HTML/CSS(Intermediate)</li>
-                <li>Tools: VS Code, Github, Sublime</li>
-            </ul>
-
-            <h3>🚀 PROJECTS</h3>
-            <p><strong>StudyPlanner Web App</strong>: <i>HTML/CSS/JavaScript</i></p>
-        </div>
+            <button type="submit">Submit / Envoyer</button>
+        </form>
     </div>
 </body>
 

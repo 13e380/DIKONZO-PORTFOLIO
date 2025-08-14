@@ -1,74 +1,158 @@
 body {
-    background-color: rgb(230, 230, 238);
-    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid rgb(233, 233, 241);
-    display: block;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Supprime la marge par défaut */
+    padding: 0;
+    min-height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    background-image: url(pexels-kseniya-kopna-52379050-7723440.jpg);
+    background-size: cover;
+    /* Couvre tout l'espace sans déformation */
+    background-position: center;
+    /* Centre l'image */
+    background-repeat: no-repeat;
+    /* Empêche la répétition */
+    background-attachment: fixed;
+    /* Fixe l'image lors du scroll (optionnel) */
+    color: #333;
 }
 
 .container {
-    display: flex;
-    min-height: 100vh;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    /* Marge verticale pour aérer */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.partie-gauche,
-.partie-droite {
-    padding: 20px;
+h1 {
+    text-align: center;
+    color: #005F73;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.partie-droite {
-    background-color: white;
-    width: 70%;
-    float: right;
+textarea {
+    resize: vertical;
 }
 
-.partie-gauche {
-    background-color: rgb(5, 70, 34);
-    color: rgb(247, 242, 242);
-    width: 30%;
-    float: left;
-}
-
-h2,
-h3,
-h4 {
+button {
+    background-color: #005F73;
     color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-h3 {
-    color: rgb(15, 7, 127);
-    text-decoration: underline;
+button:hover {
+    background-color: #0a9396;
 }
 
-a {
-    color: lightblue;
-    text-decoration: none;
+small {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
 }
 
-a:hover {
-    text-decoration: underline;
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparence renforcée */
+    backdrop-filter: blur(15px);
+    /* Effet "verre" plus prononcé */
 }
 
-ul {
-    padding-left: 20px;
+h1,
+label,
+p,
+small {
+    color: rgba(255, 255, 255, 0.9);
+    /* Blanc légèrement atténué */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.partie-droite h3 {
-    color: rgb(15, 7, 127);
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: white !important;
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
 
-.partie-droite p,
-.partie-droite li {
-    color: #333;
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: rgba(255, 255, 255, 0.3) !important;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+button {
+    display: block;
+    margin: 25px auto 0;
+    width: 50%;
+    max-width: 200px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* Ombre portée */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    /* Transition pour l'effet hover */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.3);
 }
