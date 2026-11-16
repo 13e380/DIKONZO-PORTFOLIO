@@ -1,78 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mon portfolio</title>
-    <script langage="JavaScript" type="text/JavaScript">
-        function direjambo(); { alert("jambo"); }
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enock Mutombo Musaka Dikonzo – CV</title>
+  <meta name="description" content="CV of Enock Mutombo Musaka Dikonzo, third-year Computer Science (Artificial Intelligence) student.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="partie-gauche">
-            <img src="WhatsApp Image 2025-04-14 à 07.52.45_9d170d87.jpg" alt="Photo de profil" />
-            <h2>MUTOMBO MUSAKA DIKONZO ENOCK</h2>
 
-            <h3>CONTACT</h3>
-            <p>📞 : <a href="tel:+243970991965">+243 970991965</a></p>
-            <p>📧 : <a href="mailto:enockenockdik@gmail.com">enockenockdik@gmail.com</a></p>
-            <p>JOLIE SITE/KINSERVE 31e POTEAU</p>
+  <div class="toolbar">
+    <button class="btn-pdf" type="button" onclick="window.print()">Download as PDF</button>
+  </div>
 
-            <h3>FOLLOW ME ╰┈></h3>
-            <p>Whatsapp : <a href="https://wa.me/qr/P6NFFTVHVIY7N1">+243 970991965</a></p>
-            <p>Snapchat : <a href="https://www.snapchat.com/add/enockenockdik?share_id=uPckXf8Pd8s&locale=en-US">enockdikdik</a></p>
+  <div class="cv">
 
-            <h3>LANGUAGES</h3>
-            <p>English</p>
-            <p>French</p>
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="photo-wrap">
+        <img class="photo"
+             src="https://13e380.github.io/DIKONZO-PORTFOLIO/WhatsApp%20Image%202025-04-14%20%C3%A0%2007.52.45_9d170d87.jpg"
+             alt="Portrait of Enock Mutombo Musaka Dikonzo"
+             onerror="this.style.display='none'; this.parentNode.classList.add('no-photo');">
+        <span class="initials" aria-hidden="true">ED</span>
+      </div>
 
-            <h3>HOBBIES</h3>
-            <ul>
-                <li>Reading</li>
-                <li>Sports</li>
-            </ul>
+      <section>
+        <h2>Profile</h2>
+        <p>
+          Third-year Computer Science undergraduate specialising in Artificial Intelligence,
+          passionate about software development and problem-solving. Looking to apply
+          academic knowledge and project experience in a tech internship or part-time role.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li><span class="label">Phone</span><a href="tel:+243970991965">+243 970991965</a></li>
+          <li><span class="label">Email</span><a href="mailto:enockenockdik@gmail.com">enockenockdik@gmail.com</a></li>
+          <li><span class="label">Address</span>JOLIE SITE/KINSERVE 31e POTEAU</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Follow me</h2>
+        <ul class="contact">
+          <li><span class="label">WhatsApp</span><a href="https://wa.me/243978097010" target="_blank" rel="noopener">+243 978 097 010</a></li>
+          <li><span class="label">Snapchat</span><a href="https://www.snapchat.com/add/enockenockdik?share_id=uPckXf8Pd8s&locale=en-US" target="_blank" rel="noopener">enockdikdik</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical skills</h2>
+        <ul class="plain">
+          <li><strong>Languages:</strong> Python (Beginner), HTML/CSS (Intermediate), Dart / Flutter</li>
+          <li><strong>Tools:</strong> VS Code, GitHub, Sublime</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul class="tags">
+          <li>English</li>
+          <li>French</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hobbies</h2>
+        <ul class="tags">
+          <li>Reading</li>
+          <li>Sports</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main">
+      <header class="title">
+        <h1>Enock Mutombo Musaka Dikonzo</h1>
+        <p class="subtitle">Third-Year Computer Science Student (Artificial Intelligence)</p>
+      </header>
+
+      <section>
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Bachelor of Science in Computer Science – Artificial Intelligence</h3>
+            <span class="date">Third year · In progress</span>
+          </div>
+          <p class="place">Nouveaux Horizons University, DR Congo</p>
+          <ul>
+            <li><strong>Relevant coursework:</strong> Python Programming, Algorithms, Web Fundamentals (HTML/CSS), Artificial Intelligence</li>
+            <li><strong>Academic projects:</strong> Python quiz game with score tracking; personal portfolio website in HTML/CSS</li>
+          </ul>
         </div>
+      </section>
 
-        <div class="partie-droite">
-            <h3>🚹 ABOUT ME</h3>
-            <p>First-year Computer Science undergraduate passionate about software development and problem-solving. Eager to apply academic knowledge in a tech internship or part-time role to gain hands-on experience.</p>
-
-            <h3>🎓 EDUCATION</h3>
-            <p><strong>Bachelor of Science in Computer Science</strong> (underway)</p>
-            <p>Nouveaux Horizons University, RD Congo</p>
-            <ul>
-                <li>Relevant coursework: Python Programming, Algorithms, Web Fundamentals (HTML/CSS).</li>
-                <li>Projects:
-                    <ul>
-                        <li>Built a Python-based quiz game with score tracking.</li>
-                        <li>Developed a personal portfolio website using HTML/CSS.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>💼 EXPERIENCE</h3>
-            <p><strong>Academic Leadership & Achievements</strong></p>
-            <ul>
-                <li>Graduated top of my family with 71% distinction (equivalent to First-Class Honors).</li>
-                <li>Served as class president for 4 consecutive years (2019-2023), leading peer collaboration initiatives.</li>
-                <li>Currently elected Vice president of L1 Computer Science.</li>
-            </ul>
-
-            <h3>🛠️ TECHNICAL SKILLS</h3>
-            <ul>
-                <li>Languages: Python (Beginner), HTML/CSS(Intermediate)</li>
-                <li>Tools: VS Code, Github, Sublime</li>
-            </ul>
-
-            <h3>🚀 PROJECTS</h3>
-            <p><strong>StudyPlanner Web App</strong>: <i>HTML/CSS/JavaScript</i></p>
+      <section>
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>Academic Leadership &amp; Achievements</h3>
+          </div>
+          <ul>
+            <li>Currently President of L3 Computer Science (AI).</li>
+            <li>Class president for four consecutive years (2019–2023), leading peer collaboration.</li>
+            <li>Graduated top of family with 71% distinction (equivalent to First-Class Honors).</li>
+          </ul>
         </div>
-    </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="item">
+          <div class="item-head">
+            <h3>CashTang – Mobile Application</h3>
+            <span class="date badge">In development</span>
+          </div>
+          <ul>
+            <li>Building the mobile front-end of the CashTang application with Flutter (Dart).</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>StudyPlanner Web App</h3>
+          </div>
+          <ul>
+            <li>Study planning web application built with HTML, CSS and JavaScript.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+  </div>
 </body>
-
 </html>
